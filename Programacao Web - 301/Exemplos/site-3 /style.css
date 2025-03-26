@@ -1,0 +1,13 @@
+header{
+  text-align: center;
+}
+main{
+  display: block;
+  width: 50%;
+  border: 15px dashed green;
+  padding: 200px;
+  margin: 30px auto;
+}
+footer{
+  text-align: center;
+}

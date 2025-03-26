@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  padding: 5px;
+  min-height: 100vh;
+}
+
+header { grid-area: header; background: aqua; }
+main { grid-area: main; background: aqua;}
+aside{ grid-area: aside; background: aqua;}
+footer{ grid-area: footer; background: aqua;}
+
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 10px;
+}
