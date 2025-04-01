@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    border: 5px solid #333;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilizando as casas pretas */
+.black {
+    width: 80px;
+    height: 80px;
+    background-color:  #ffce9e; /* Bege */
+}
+
+.white {
+    width: 80px;
+    height: 80px;
+    background-color: #d18b47; /* Marrom claro */
+}
