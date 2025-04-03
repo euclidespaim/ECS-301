@@ -1,0 +1,16 @@
+/* O código da animação */
+@keyframes exemplo {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* /* O elemento em que a animação será apliacada */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: exemplo;
+  animation-duration: 4s;
+}

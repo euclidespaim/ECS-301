@@ -1,7 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: Arial, sans-serif;
   height: 100vh;
-  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.6;
+}
+
+header {
+  font-style: italic;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+footer {
+
 }
