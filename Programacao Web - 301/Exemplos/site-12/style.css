@@ -62,3 +62,19 @@ footer {
   font-weight: bold;
   font-family: 'Comic Sans MS', cursive;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  aside, section, .extra {
+    font-size: 1rem;
+  }
+  body{
+    background-color: black;
+  }
+  
+}
