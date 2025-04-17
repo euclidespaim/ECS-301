@@ -48,3 +48,27 @@ body {
   padding: 10px;
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    height: auto;
+  }
+
+  .header,
+  .footer,
+  .sidebar,
+  .main {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .content-box {
+    margin-bottom: 10px;
+  }
+}
