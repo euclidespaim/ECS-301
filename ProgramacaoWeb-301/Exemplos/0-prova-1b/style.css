@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav principal sidebar"
+    "nav principal ads"
+    "footer footer footer";
+  gap: 10px;
+  height: 96vh;
+}
+
+/* Áreas nomeadas */
+.header    { grid-area: header; }
+.footer    { grid-area: footer; }
+.nav       { grid-area: nav; }
+.principal { grid-area: principal; }
+.sidebar   { grid-area: sidebar; }
+.ads       { grid-area: ads; }
+
+/* Visuais */
+.header,
+.footer,
+.nav,
+.principal,
+.sidebar,
+.ads {
+  background-color: lightyellow;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "principal"
+      "sidebar"
+      "ads"
+      "footer";
+    height: auto;
+  }
+}
