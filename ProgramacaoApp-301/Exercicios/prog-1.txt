@@ -1,0 +1,6 @@
+escreva "Digite um número: "
+leia n
+escreva "Digite outro número: "
+leia m
+soma = n + m
+escreva "A soma é:    ", soma
