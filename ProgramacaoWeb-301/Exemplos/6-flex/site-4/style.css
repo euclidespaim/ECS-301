@@ -11,43 +11,31 @@ body {
   font-family: sans-serif;
 }
 
-header,
-footer {
-  background-color: #ccc;
-  text-align: center;
-  padding: 10px;
-}
 
-header {
+header, footer {
   height: 60px;
   line-height: 60px;
+  text-align: center;
   font-weight: bold;
-}
-
-footer {
-  height: 40px;
-  line-height: 40px;
-  font-weight: bold;
+  color: #fff;
+  background-color: #333;
 }
 
 main {
-  flex: 1;
   display: flex;
-  flex-wrap: wrap;
+  flex: 1;
   padding: 10px;
   gap: 10px;
   background-color: #f4f4f4;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 
 .box {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: calc(25% - 20px);
-  background-color: #ddd;
-  min-width: 120px;
   display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
   justify-content: center;
   align-items: center;
   font-weight: bold;

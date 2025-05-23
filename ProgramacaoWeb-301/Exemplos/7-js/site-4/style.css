@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+  width: 200px;
+  margin: 2rem;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

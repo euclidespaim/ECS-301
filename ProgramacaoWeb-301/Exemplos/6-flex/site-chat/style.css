@@ -97,3 +97,36 @@ body {
   border: none;
   cursor: pointer;
 }
+
+/* Media Query para telas menores (mobile-first) */
+@media (max-width: 768px) {
+  .sidebar {
+    visibility: hidden; /* Oculta a sidebar em telas pequenas */
+    position: absolute;
+  }
+
+  .chat-header {
+    text-align: center;
+  }
+
+  .chat-messages {
+    padding: 10px;
+  }
+
+  .chat-input {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .chat-input input {
+    width: 80%;
+  }
+
+  .chat-input button {
+    width: 20%;
+  }
+}

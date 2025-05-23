@@ -1,0 +1,40 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+main {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.coluna-centro {
+  width: 900px;
+  height: 200px;
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+  line-height: 150px;
+  justify-content: center;
+}

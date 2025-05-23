@@ -2,8 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Arial', sans-serif;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 header {
@@ -33,6 +32,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  height: 80vh;
   gap: 10px;
   text-align: center;
   font-weight: bold;
@@ -75,6 +75,7 @@ footer {
   }
   body{
     background-color: black;
+    overflow: auto;
   }
   
 }
