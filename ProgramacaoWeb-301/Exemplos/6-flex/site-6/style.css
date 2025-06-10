@@ -23,20 +23,34 @@ header, footer {
 
 main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 10px;
   gap: 10px;
   background-color: #f4f4f4;
-  justify-content: center;
-  align-items: center;
 }
 
 .box {
+  width: calc(50% - 10px); /* metade do espaço disponível, menos o gap */
+  height: 260px;
+  background-color: #ddd;
   display: flex;
-  width: 200px;
-  height: 200px;
-  background-color: grey;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+.col {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 10px solid white;
+}
+
+.col:first-child {
+  border-left: none; /* tira a borda do primeiro item */
 }

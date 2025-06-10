@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+#mensagem {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a0;
+}
+
+.oculto {
+  display: none;
+}
