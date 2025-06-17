@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Adivinhação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f4f4f4;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Adivinhe o número!</h1>
+  <p>Digite um número entre 1 e 10:</p>
+  <input type="number" id="entrada" min="1" max="10">
+  <button id="tentar">Tentar</button>
+  <p id="mensagem"></p>
+
+  <script>
+    var numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+    document.getElementById("tentar").addEventListener("click", function() {
+      var chute = parseInt(document.getElementById("entrada").value);
+      var mensagem = document.getElementById("mensagem");
+
+      if (isNaN(chute) || chute < 1 || chute > 10) {
+        mensagem.innerText = "Digite um número entre 1 e 10.";
+        return;
+      }
+
+      if (chute === numeroSecreto) {
+        mensagem.innerText = "Parabéns! Você acertou!";
+        // Gera um novo número para continuar jogando
+        numeroSecreto = Math.floor(Math.random() * 10) + 1;
+      } else {
+        mensagem.innerText = "Errou! Tente novamente.";
+      }
+    });
+  </script>
+</body>
+</html>

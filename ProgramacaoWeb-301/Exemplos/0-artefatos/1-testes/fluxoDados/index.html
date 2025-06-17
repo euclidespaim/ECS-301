@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluxo de Tarefas com Anime.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fluxo de Dados: Lista de Tarefas</h1>
+
+  <div class="value-box" id="valor">"Ler livro"</div>
+
+  <div class="container">
+    <div class="box" id="inputBox">Input<br><strong>“Ler livro”</strong></div>
+    <div class="arrow">➡️</div>
+    <div class="box" id="variavelBox">Variável<br><strong>novaTarefa</strong></div>
+    <div class="arrow">➡️</div>
+    <div class="box" id="arrayBox">Array<br><strong>tarefas[]</strong></div>
+    <div class="arrow">➡️</div>
+    <div class="box" id="foreachBox">forEach()<br><strong>valor</strong></div>
+  </div>
+
+  <div class="task-list" id="domBox">
+    <strong>DOM - Lista de Tarefas:</strong>
+    <ul id="lista"></ul>
+  </div>
+
+  <pre class="code-box" id="codigo"></pre>
+
+  <button onclick="proximoPasso()">Próximo Passo</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
