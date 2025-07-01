@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f1f1f1;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: green;
+      color: white;
+    }
+
+    #contador {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    #mensagem {
+      font-size: 20px;
+      color: blue;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Contador de Cliques</title>
+</head>
+<body>
+  <h1>Meta de Cliques</h1>
+
+  <button id="botaoClique">Clique aqui</button>
+  
+  <p id="contador">Cliques: 0</p>
+  <p id="mensagem"></p>
+
+  <script>
+    var cliques = 0;
+    var botao = document.getElementById("botaoClique");
+
+    botao.addEventListener("click", function() {
+      
+      cliques = cliques + 1;
+
+      document.getElementById("contador").innerText = "Cliques: " + cliques;
+
+      if (cliques === 10) {
+        document.getElementById("mensagem").innerText = "Parabéns! Você atingiu a meta!";
+      }
+    });
+    </script>
+</body>
+</html>
